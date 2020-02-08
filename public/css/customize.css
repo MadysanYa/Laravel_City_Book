@@ -1,0 +1,49 @@
+/* ------ Search menu ------ */
+.header-search-button-customize{
+    height: 40px;
+    border: none;
+    color: #fff;
+    line-height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 30px;
+    cursor: pointer;
+    float: left;
+    background: #4DB7FE;
+}
+/* ------ pagination ------ */
+.pagination li{
+    display: inline-block !important;
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    border-radius: 6px !important;
+    border: 1px solid #eee !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    font-size: 13px !important;
+    color: #888DA0 !important;
+    background: #fff !important;
+    letter-spacing: 1px !important;
+}
+.pagination .active{
+    color: #ffffff !important;
+    background-color: #42b9fd !important;
+}
+/* ------ Contact map ------ */
+#singleMap {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+/* ------ Validate Form ------ */
+.is-invalid {
+    border: 1px solid #f00 !important;
+} 
+.invalid-feedback {
+    margin-bottom: 20px;
+    color: #f00;
+}
+/* ------ Textarea ------ */
+.custom-form textarea {
+    margin-bottom: 20px !important;
+}
