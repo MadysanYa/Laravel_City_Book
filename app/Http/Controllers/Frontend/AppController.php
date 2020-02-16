@@ -9,26 +9,6 @@ use Cohensive\Embed\Facades\Embed;
 
 class AppController extends Controller
 {
-    public function home()
-    {
-        $listings = Listing::take(6)->orderBy('id', 'desc')->get();
-        return view('frontend.home', ['listings' => $listings]);
-    }
-
-    public function about()
-    {
-        return view('frontend.about');
-    }
-
-    public function contact()
-    {
-        return view('frontend.contact');
-    }
-
-    public function error404()
-    {
-        return view('frontend.error-404');
-    }
 
     public function listing(Request $request)
     {

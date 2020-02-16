@@ -63,7 +63,7 @@
                             </div>
                             <div id="contact-form">
                                 <div id="message"></div>
-                                <form action="{{ route('app.contact') }}" method="post" class="custom-form" id="contactform" name="contactform" >
+                                <form method="post" action="{{ route('app.contact') }}" class="custom-form" id="contactform" name="contactform" >
                                     @csrf
                                     <fieldset>
                                         <label><i class="fa fa-user-o"></i></label>
@@ -84,7 +84,7 @@
                                             </div>
                                         @enderror
 
-                                        <textarea class="@error('message') is-invalid @enderror" name="message" id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                                        <textarea class="@error('message') is-invalid @enderror" name="message" id="message" cols="40" rows="3" placeholder="Your Message:"></textarea>
                                         @error('message')
                                             <div class="invalid-feedback" role="alert">
                                                 {{ $message }}
@@ -92,7 +92,8 @@
                                         @enderror
 
                                     </fieldset>
-                                    <button type="submit" class="btn big-btn color-bg flat-btn" id="submit">Send<i class="fa fa-angle-right"></i></button>
+                                    <button type="submit" class="btn big-btn color-bg flat-btn" name="submit" id="submit">Send<i class="fa fa-angle-right"></i></button>
+                                    
                                 </form>
                             </div>
                             <!-- contact form  end--> 

@@ -9,7 +9,7 @@
                 <div id="tabs-container"> 
                     <div id="tab-1">
                         <div class="custom-form">
-                            <form method="post" action="">
+                            <form method="post" action=" {{route('login')}} ">
                             @csrf
                                 <label>Username or Email Address * </label>
                                 <input type="text" name="email" class="@error('email') is-invalid @enderror" autocomplete="off"> 

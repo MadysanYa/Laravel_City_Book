@@ -3,12 +3,12 @@
 use Illuminate\Support\Facades\Route;
 
 Route::namespace('Frontend')->group(function () {
-    Route::get('/', 'AppController@home')->name('app.home');
-    Route::get('/about', 'AppController@about')->name('app.about');
-    Route::get('/contact', 'AppController@contact')->name('app.contact');
+    Route::get('/', 'HomeController@index')->name('app.home');
+    Route::get('/about', 'AboutController@index')->name('app.about');
+    Route::get('/contact', 'ContactController@index')->name('app.contact');
+    Route::post('/contact', 'ContactController@store')->name('app.contact');
     Route::get('/listings', 'AppController@listings')->name('app.listings');
     Route::get('/listing', 'AppController@listing')->name('app.listing');
-    Route::get('/error-404', 'AppController@error404')->name('app.error404');
 });
 
 Route::middleware('guest')->group(function(){
